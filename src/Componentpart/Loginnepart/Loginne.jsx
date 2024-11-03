@@ -52,16 +52,20 @@ console.log(password)
         onChange={(e)=>setPassword(e.target.value)}
         type="text"  
         className="  ml-20px w-[400px] text-black h-[30px]  rounded-[3px] outline-none " placeholder="Password Name Wite " />
+        
         <p className="  text-black bg-red-500 font-bold flex justify-start text-center " >{passwordError}</p>
+        <div className="batton  flex justify-end mr-[39px]  mt-[20px] ">
+        <button  
+        type="submit" 
+        className="items-center flex justify-center  text-red-700 font-bold w-[70px] h-[30px]  bg-yellow-400 active:scale-0">
+            Login 
+        </button>
+        </div>
     </form>
 
       <div className="loginid buttone flex justify-end mr-[42px]  mt-[20px]  ">
       <h1 className=" mr-[80px] text-blue-700  "> Have you not any account ?  <span className="text-gray-700" >Rester</span> </h1>
-        <button  
-        type="submit" 
-        className="items-center  text-red-700 font-bold w-[70px] h-[30px]  bg-yellow-400 active:scale-0">
-            Login 
-        </button>
+        
       </div>
 
      </div>
